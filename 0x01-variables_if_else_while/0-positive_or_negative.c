@@ -1,11 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-/*
-*	script to print if the number is positive or negative or zero
-*	retur zero if success
-*/
-/* main function to print numbers */
+
+/**
+ * main - Determines if a number is positive, negative or zero.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
