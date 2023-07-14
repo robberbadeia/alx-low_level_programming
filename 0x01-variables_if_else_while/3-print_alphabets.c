@@ -25,7 +25,7 @@ int main(void)
 	{
 		putchar(uAlpha);
 
-		UAlpha++;
+		uAlpha++;
 	}
 
 	putchar('\n');
