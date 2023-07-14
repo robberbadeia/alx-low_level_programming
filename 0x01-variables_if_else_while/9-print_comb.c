@@ -11,11 +11,12 @@ int main(void)
 {
 	int i = 0;
 
-	for (i < 10; i++)
+	while (i < 10)
 	{
 		putchar('0' + i);
 		putchar(',');
 		putchar(' ');
+		i++;
 	}
 	putchar('\n');
 	return (0);
