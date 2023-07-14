@@ -12,13 +12,13 @@ int main(void)
 	/*
 	 * Declare a variable and initialize it 
 	 */
-	char alpha = "a";
+	char alpha = 'a';
 
 	/*
 	 * use a while loop to print alpha variable char
 	 */
 
-	while(alpha <= "z")
+	while(alpha <= 'z')
 	{
 		// print alpha variable value
 		putchar(alpha);
@@ -28,6 +28,6 @@ int main(void)
 	
 	}
 
-	putchar("\n")
+	putchar('\n')
 	return (0);
 }
