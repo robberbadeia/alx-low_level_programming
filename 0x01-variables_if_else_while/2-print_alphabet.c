@@ -9,14 +9,7 @@
  */
 int main(void)
 {
-	/*
-	 *Declare a variable and initialize it 
-	 * */
 	char alpha = 'a';
-
-	/*
-	 * use a while loop to print alpha variable char
-	 **/
 
 	while (alpha <= 'z')
 	{
