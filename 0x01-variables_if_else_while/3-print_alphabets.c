@@ -19,8 +19,6 @@ int main(void)
 		lAlpha++;
 	}
 
-	putchar('\n');
-
 	while (uAlpha <= 'Z')
 	{
 		putchar(uAlpha);
