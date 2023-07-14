@@ -16,7 +16,7 @@ int main(void)
 
 	/*
 	 * use a while loop to print alpha variable char
-	 */
+	 **/
 
 	while (alpha <= 'z')
 	{
