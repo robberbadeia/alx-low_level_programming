@@ -20,10 +20,8 @@ int main(void)
 
 	while(alpha <= 'z')
 	{
-		// print alpha variable value
 		putchar(alpha);
 
-		// variable increment
 		alpha++;
 	
 	}
