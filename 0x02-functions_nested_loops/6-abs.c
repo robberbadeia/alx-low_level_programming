@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- *_abs function 
+ *_abs function
  *@i : is an integer value
  *Return : the absolute value of @i
  */
