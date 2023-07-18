@@ -9,7 +9,7 @@ void times_table(void)
 		{
 			z = i * j;
 
-			if (i == 9)
+			if (j == 9)
 			{
 				if (z > 9)
 				{
