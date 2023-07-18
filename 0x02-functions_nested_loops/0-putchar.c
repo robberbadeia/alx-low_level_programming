@@ -6,11 +6,12 @@
  */
 void print_putchar(void)
 {
-	char putchar[] = "_putchar";
+	char c[] = "_putchar";
+	int i;
 
-	for (int i = 0; i <= 7; i++)
+	for (i = 0; i <= 7; i++)
 	{
-		_putchar(putchar[i]);
+		_putchar(c[i]);
 	}
 	return (0);
 }
