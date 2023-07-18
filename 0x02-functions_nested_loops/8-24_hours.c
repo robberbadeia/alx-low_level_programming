@@ -10,6 +10,7 @@ void jack_bauer(void)
 		for (j = 0; j < 60; j++)
 		{
 			if (i < 10)
+			{
 				if (j < 10)
 				{
 					_putchar('0');
@@ -19,6 +20,7 @@ void jack_bauer(void)
 					_putchar(j);
 					_putchar('\n');
 				}
+			}
 			else
 			{
 				if (j < 10)
