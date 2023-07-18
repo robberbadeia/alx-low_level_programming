@@ -8,7 +8,9 @@
  */
 int add(int i, int j)
 {
-	// @z int type number
+	/*
+	 *  @z int type number
+	 */
 	int z;
 
 	z = i + j;
