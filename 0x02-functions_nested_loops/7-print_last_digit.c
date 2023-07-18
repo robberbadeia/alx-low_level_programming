@@ -19,6 +19,6 @@ int print_last_digit(int n)
 	}
 	else
 	{
-		return (n);
+		return (n % 10);
 	}
 }
