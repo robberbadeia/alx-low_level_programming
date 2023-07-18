@@ -4,7 +4,7 @@
  *
  *Return: nothing, return void
  */
-void _putchar(char c)
+int main(void)
 {
 	char c[] = "_putchar";
 	int i;
