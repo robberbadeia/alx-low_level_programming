@@ -6,18 +6,12 @@
  */
 int _islower(int c)
 {
-	int i;
-
-	for (i = 97; i <= 122; i++)
+	if (c >= 97 && c <= 122)
 	{
-		if (i == c)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
+		return (1);
 	}
-	_putchar('\n');
+	else
+	{
+		return (0);
+	}
 }
