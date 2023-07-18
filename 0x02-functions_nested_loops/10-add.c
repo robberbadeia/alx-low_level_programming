@@ -3,7 +3,6 @@
  * add - Add two integers
  * @i: int type number
  * @j: int type number
- * @z: int type number containe the result of add @i and @j
  * Return: result of addition
  */
 int add(int i, int j)
