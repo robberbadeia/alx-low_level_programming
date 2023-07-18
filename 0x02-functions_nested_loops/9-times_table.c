@@ -31,6 +31,13 @@ void times_table(void)
 					_putchar(',');
 					_putchar(' ');
 				}
+				else if (z > 9 && j == 1 && i >= 5)
+				{
+					_putchar(z / 10 + '0');
+					_putchar(z % 10 + '0');
+					_putchar(',');
+					_putchar(' ');
+				}
 				else
 				{
 					_putchar('0' + z);
