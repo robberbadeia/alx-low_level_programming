@@ -11,10 +11,10 @@ void print_times_table(int n)
 	
 	if (n >= 0 && n <= 15)
 	{
-		while (x < n)
+		while (x <= n)
 		{
 			y = 0;
-			while (y < n)
+			while (y <= n)
 			{
 				z = x * y;
 
