@@ -13,8 +13,8 @@ void print_number(int n)
 		}
 		else
 		{
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
+			_putchar((n / 10) + '0');
+			_putchar((n % 10) + '0');
 		}
 	}
 	else
@@ -27,8 +27,8 @@ void print_number(int n)
 		else
 		{
 			_putchar('-');
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
+			_putchar((n / 10) + '0');
+			_putchar((n % 10) + '0');
 		}
 	}
 
