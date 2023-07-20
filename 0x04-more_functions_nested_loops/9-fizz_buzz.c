@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /*
- * fizz-buzz - Fuction to prints
+ * main - Fuction to prints
  * fizz: if the number divided by 3
  * buzz if the number divided by 5
  * fizzbuzz if the number divided by 3 & 5
@@ -10,8 +10,8 @@
 
 int main(void)
 {
-        int i;
-        
+	int i;
+
 	for (i = 1; i <= 100; i++)
 	{
 		if (((i % 3) == 0) && ((i % 5) == 0))
@@ -23,7 +23,7 @@ int main(void)
 			printf("%s ", "Fizz");
 		}
 		else if ((i % 5) == 0 && (i % 3) != 0)
-		{ 
+		{
 			if (i == 100)
 				printf("%s", "Buzz");
 			else
