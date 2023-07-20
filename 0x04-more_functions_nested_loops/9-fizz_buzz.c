@@ -1,12 +1,10 @@
-#include "main.h"
 #include <stdio.h>
-/*
- * main - Fuction to prints
- * fizz: if the number divided by 3
- * buzz if the number divided by 5
- * fizzbuzz if the number divided by 3 & 5
- * Return: 0 if success
-*/
+
+/**
+* main - Fizz Buzz
+*
+* Return: 0
+**/
 
 int main(void)
 {
@@ -14,25 +12,16 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (((i % 3) == 0) && ((i % 5) == 0))
-		{
-			printf("%s ", "FizzBuzz");
-		}
-		else if ((i % 3) == 0 && (i % 5) != 0)
-		{
-			printf("%s ", "Fizz");
-		}
+		if ((i % 3) == 0 && (i % 5) != 0)
+			printf("Fizz ");
+		else if (i == 100)
+			printf("Buzz");
 		else if ((i % 5) == 0 && (i % 3) != 0)
-		{
-			if (i == 100)
-				printf("%s", "Buzz");
-			else
-				printf("%s ", "Buzz");
-		}
+			printf("Buzz ");
+		else if ((i % 3) == 0 && (i % 3) == 0)
+			printf("FizzBuzz ");
 		else
-		{
 			printf("%d ", i);
-		}
 	}
 	printf("\n");
 	return (0);
