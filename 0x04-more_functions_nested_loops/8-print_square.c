@@ -1,8 +1,10 @@
 #include "main.h"
-/*
+
+/**
  * print_square - Function to print square with '#'
  * @size: int number variable
-*/
+**/
+
 void print_square(int size)
 {
 	if (size > 0)
