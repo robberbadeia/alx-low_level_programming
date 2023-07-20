@@ -5,9 +5,10 @@
  * fizz: if the number divided by 3
  * buzz if the number divided by 5
  * fizzbuzz if the number divided by 3 & 5
+ * Return: 0 if success
 */
 
-void fizz_buzz(void)
+int fizz_buzz(void)
 {
         int i;
         
@@ -34,4 +35,5 @@ void fizz_buzz(void)
 		}
 	}
 	printf("\n");
+	return (0);
 }
