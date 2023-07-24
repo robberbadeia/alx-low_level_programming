@@ -11,7 +11,7 @@ char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 
 void generatePassword(int len);
-int main();
+int main(void);
 
 int _putchar(char c);
 
