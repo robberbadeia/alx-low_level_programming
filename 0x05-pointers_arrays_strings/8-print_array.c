@@ -3,6 +3,7 @@
 /**
  *print_array - Function to prin n array elements
  *@n: user input number of elements to be printed
+ *@a: user array 
  */
 void print_array(int *a, int n)
 {
