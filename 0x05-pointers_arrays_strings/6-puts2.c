@@ -1,10 +1,7 @@
 #include "main.h"
 /**
- *
- *
- *
- *
- *
+ *puts2 - Function to print string from first one
+ *@str: user input string
  */
 
 void puts2(char *str)
@@ -13,7 +10,7 @@ void puts2(char *str)
 
 	i = 0;
 	j = 0;
-	while(str[i] != '\0\)
+	while(str[i] != '\0')
 	{
 		i++;
 	}
