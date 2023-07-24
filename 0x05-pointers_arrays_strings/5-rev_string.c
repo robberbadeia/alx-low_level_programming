@@ -5,18 +5,16 @@
  */
 void rev_string(char *s)
 {
-	int i;
+	int c, i;
+	char sorted[1000] = "";
 
-	i = 0;
-	while (s[i] != '\0')
+	while (s[c] != '\0')
 	{
-		i++;
+		c++;
 	}
-	i--;
-	while (i >= 0)
+	c--;
+	for (i = 0; i <= c; i++)
 	{
-		_putchar(s[i]);
-		i--;
+		sorted[i] = s[c-i];
 	}
-	_putchar('\n');
 }
