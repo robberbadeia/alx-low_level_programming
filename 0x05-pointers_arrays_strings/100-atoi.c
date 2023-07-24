@@ -14,4 +14,6 @@ int _atoi(char *s)
 		n = n * 10 + (s[i] - 48);
 		return n;
 	}
+
+	return 0;
 }
