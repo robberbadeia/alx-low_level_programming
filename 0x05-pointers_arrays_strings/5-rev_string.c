@@ -6,10 +6,9 @@
 void rev_string(char *s)
 {
 	int c, i;
-	char r[1000];
+	char r[1000] = " ";
 
 	c = 0;
-	r[] = " ";
 	while (s[c] != '\0')
 	{
 		c++;
