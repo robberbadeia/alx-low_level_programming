@@ -20,5 +20,5 @@ void rev_string(char *s)
 		s[i] = s[c];
 		s[c] = k;
 	}
-	l[i++] = '\0';
+	k[i++] = '\0';
 }
