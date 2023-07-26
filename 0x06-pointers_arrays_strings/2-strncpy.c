@@ -3,6 +3,7 @@
  *_strncpy - Function to copy @n of src array elements to dest array
  *@src: user array pointer
  *@dest: user array pointer
+ *@n: user input int number
  *Return: @dest array pointer
  */
 char *_strncpy(char *dest, char *src, int n)
