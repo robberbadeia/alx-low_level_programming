@@ -10,13 +10,9 @@ int _strcmp(char *s1, char *s2)
 	int i, n;
 
 	i = n = 0;
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
 		n = n + s1[i] - s2[i];
-	}
-	for ( ; s2[i] != '\0'; i++)
-	{
-		n = n - s2[i];
 	}
 	return (n);
 }
