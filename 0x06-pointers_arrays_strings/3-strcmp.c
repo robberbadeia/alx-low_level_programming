@@ -14,5 +14,9 @@ int _strcmp(char *s1, char *s2)
 	{
 		n = n + s1[i] - s2[i];
 	}
+	for ( ; s2[i] != '\0'; i++)
+	{
+		n = n - s2[i];
+	}
 	return (n);
 }
