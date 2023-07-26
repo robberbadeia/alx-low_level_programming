@@ -1,18 +1,15 @@
 #include "main.h"
 /**
- *_strcmp - Function to compare to arrays
- *@s1: user input array pointer
- *@s2: user array pointer
- *Return: integer number
+ * _strcmp - compares two strings, ending at the first byte that is different.
+ * @s1: string to be compared
+ * @s2: string to compare by
+ * Return: the difference between the first character that are not the same
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, n;
+	int i;
 
-	i = n = 0;
-	for (i = 0; (s1[i] != '\0') && (s2[i] != '\0') ; i++)
-	{
-			n = n + s1[i] - s2[i];
-	}
-	return (n);
+	for (i = 0; s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i]; i++)
+		;
+	return (s1[i] - s2[i]);
 }
