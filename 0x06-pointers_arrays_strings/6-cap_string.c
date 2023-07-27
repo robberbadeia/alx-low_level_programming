@@ -6,94 +6,22 @@
  */
 char *cap_string(char *s)
 {
-	int i;
+	int i, j;
+	char ss[] = " \t\n,;.!?\"(){}}";
 
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (i == 0)
+		if (s[0] >= 'a' && s[0] <= 'z')
 		{
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
+			s[0] = s[0] - 32;
 		}
-		else if (s[i] == ' ')
+		for (j = 0; s[i] == ss[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z'; j++)
 		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == '\t')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == '\n')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == ',')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == ';')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == '.')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == '!')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == '?')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == '"')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == '(')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == ')')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == '{')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
-		}
-		else if (s[i] == '}')
-		{
-			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] = s[i] - 32;
+			s[i + 1] = s[i + 1] - 32;
+
 		}
 		i++;
 	}
+	return (s);
 }
