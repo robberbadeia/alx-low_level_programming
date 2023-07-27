@@ -1,27 +1,30 @@
 #include "main.h"
+
 /**
- *cap_string - Function to convert string to upper
- *@s: user input string
- *Return: array pointer
- */
-char *cap_string(char *s)
+* *cap_string - a function that capitalizes all words of a string
+* @str: string
+* Return: string
+**/
+
+char *cap_string(char *str)
 {
-	int i, j;
-	char ss[] = " \t\n,;.!?\"(){}}";
+	int i = 1;
 
-	i = 1;
-	while (s[i] != '\0')
+	if (str[0] >= 'a' && str[0] <= 'z')
+		str[0] = str[0] - 32;
+
+	while (str[i] != '\0')
 	{
-		if (s[0] >= 'a' && s[0] <= 'z')
+		if ((str[i - 1] == ' ' || str[i - 1] == '\t'
+		     || str[i - 1] == '\n' || str[i - 1] == ',' || str[i - 1] == ';'
+		     || str[i - 1] == '.' || str[i - 1] == '!' || str[i - 1] == '?'
+		     || str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')'
+		     || str[i - 1] == '{' || str[i - 1] == '}')
+		     && (str[i] >= 'a' && str[i] <= 'z'))
 		{
-			s[0] = s[0] - 32;
-		}
-		for (j = 0; s[i] == ss[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z'; j++)
-		{
-			s[i + 1] = s[i + 1] - 32;
-
+			str[i] = str[i] - 32;
 		}
 		i++;
 	}
-	return (s);
+	return (str);
 }
