@@ -1,4 +1,4 @@
-#incluude "main.h"
+#include "main.h"
 /**
  *cap_string - Function to convert string to upper
  *@s: user input string
