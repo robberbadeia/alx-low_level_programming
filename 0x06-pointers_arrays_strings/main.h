@@ -8,4 +8,6 @@ char *cap_string(char *);
 char *leet(char *);
 char *rot13(char *);
 
+
+int main(void);
 int _putchar(char c);
