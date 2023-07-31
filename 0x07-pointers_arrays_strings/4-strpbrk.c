@@ -30,8 +30,5 @@ char *_strpbrk(char *s, char *accept)
 			break;
 		i++;
 	}
-	while (s[i])
-	{
-		return (s[i]);
-	}
+	return (s[i]);
 }
