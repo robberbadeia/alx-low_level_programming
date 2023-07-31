@@ -1,26 +1,32 @@
 #include "main.h"
 /**
- *_strchr - Function to find a character in array
- *@s: input array
- *@c: input char by user
- *Return: array
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  */
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	int i, add;
 
-	i = 0;
-	while (s[i] != '\0')
+	add = 0;
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			return (*(s + i));
+			add = &s[i];
 			break;
 		}
-		else
-		{
-			return {'\0'};
-		}
-		i++;
+	}
+	if (add == 0)
+	{
+		return ('\0');
+	}
+	else
+	{
+		return (add);
 	}
 }
