@@ -19,6 +19,4 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-	if (s[i] != c)
-		return ('\0');
 }
