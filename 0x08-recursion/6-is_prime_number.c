@@ -15,7 +15,7 @@ int checker(int i, int b)
 		return (0);
 	if (i < b && b % i == 0)
 		return (1);
-	return(checker(i + 1, b));
+	return (checker(i + 1, b));
 }
 /**
  *is_prime_number - Function to check numbers
