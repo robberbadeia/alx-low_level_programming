@@ -1,13 +1,7 @@
 #include "main.h"
 /**
- *
- *
- *
  *_print_rev_recursion - Function to print array
  *@s: input array
- *
- *
- *
  */
 void _print_rev_recursion(char *s)
 {
@@ -18,4 +12,8 @@ void _print_rev_recursion(char *s)
 	s++;
 	_print_rev_recursion(s);
 	_putchar(*s);
+	if (s == 0)
+	{
+		return ('\n');
+	}
 }
