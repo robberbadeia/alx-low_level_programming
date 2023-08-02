@@ -1,11 +1,16 @@
 #include "main.h"
 /**
- *_print_rev_recursion - Function to print array 
+ *_puts_recursion - Function to print array 
  *@s: array
  */
-void _print_rev_recursion(char *s)
+void _puts_recursion(char *s)
 {
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
 	_putchar(*s);
 	s++;
-	_print_rev_recursion(s);
+	_puts_recursion(s);
 }
