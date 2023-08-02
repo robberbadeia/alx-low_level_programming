@@ -14,7 +14,7 @@ int checker(int i, int b)
 	if (b % 2 == 0 || b % 3 == 0)
 		return (0);
 	if (i < b && b % i == 0)
-		return (0);
+		return (1);
 	return(checker(i + 1, b));
 }
 /**
