@@ -6,7 +6,7 @@
  *@len: int
  *Return: int
  */
-int checker(char s, int j, int len)
+int checker(char *s, int j, int len)
 {
 	if (s[j] != s[len])
 		return (0);
