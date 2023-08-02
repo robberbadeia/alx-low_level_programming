@@ -8,7 +8,7 @@ int checker(int n, int base);
 int is_prime_number(int n);
 int checker(int i, int b);
 int is_palindrome(char *s);
-int checker(char s, int j, int len);
+int _checker(char s, int j, int len);
 
 
 
