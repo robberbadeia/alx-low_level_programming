@@ -7,13 +7,13 @@
  */
 int checker(int i, int b)
 {
-	if (n <= 1)
+	if (b <= 1)
 		return (0);
-	if (n == 2 || n == 3)
+	if (b == 2 || b == 3)
 		return (1);
-	if (n % 2 == 0 || n % 3 == 0)
+	if (b % 2 == 0 || b % 3 == 0)
 		return (0);
-	if (i < n && n % i == 0)
+	if (i < b && b % i == 0)
 		return (0);
 	checker(i + 1, b);
 }
