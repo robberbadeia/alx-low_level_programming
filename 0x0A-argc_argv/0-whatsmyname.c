@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+#include <stdlio.h>
 /**
  *main - Function to print app name
  *@argc: size
