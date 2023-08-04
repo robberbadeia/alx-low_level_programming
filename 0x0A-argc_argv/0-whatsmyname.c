@@ -1,16 +1,17 @@
-#include "main.h"
-#include <stdlio.h>
+#include <stdio.h>
+
 /**
- *main - Function to print app name
- *@argc: size
- *@argv: array
- *Return: 0
- */
+* main - entry point
+* @argc: size of argv
+* @argv: array
+* Return: 0
+**/
+
 int main(int argc, char *argv[])
 {
 	int i;
 
 	for (i = 0; i < argc; i++)
-			printf("%s", argv[i]);
+		printf("%s\n", argv[i]);
 	return (0);
 }
