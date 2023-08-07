@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 #include <stdio.h>
 /**
  *alloc_grid - Function to create 2-D array
