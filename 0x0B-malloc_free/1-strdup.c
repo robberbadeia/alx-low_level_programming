@@ -9,10 +9,10 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int i, j;
+	int i;
 
 	i = 0;
-	if (*str == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	while (str[i] != '\0')
