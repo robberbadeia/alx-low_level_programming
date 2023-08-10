@@ -1,48 +1,45 @@
-#include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
 /**
- *string_nconcat - Function to con two string
- *@s1: input
- *@s2: input
- *@n: input
- *Return: pointer
- */
+* string_nconcat - concatentates two strings using the newly allocated memory
+* @s1: first string
+* @s2: second string
+* @n: unsigned int
+* Return: a pointer to 2 string concat..
+**/
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int l1, l2, len, i, j;
-	char *ptr;
+	int l, i;
+	unsigned int j;
+	char *p;
 
-	l1 = l2 = len = i = j = 0;
+	l = 0;
+	i = 0;
+	j = 0;
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[l1] != '\0')
-		l1++;
-	while (s2[l2] != '\0')
-		l2++;
-	if (n >= l2)
-		len = l1 + l2 + 1;
-	else
-		len = l1 + n + 1;
-	ptr = malloc(len * sizeof(char));
-
-	if (ptr == NULL)
+	while (s1[l])
+		l += 1;
+	p = malloc(l + n + 1);
+	if (p == NULL)
 		return (NULL);
-
-	while (s1[i] != '\0')
+	while (s1[i])
 	{
-		ptr[i] = s1[i];
-		i++;
+		p[i] = s1[i];
+		i += 1;
 	}
-	while (j < n && i++)
-	{
-		ptr[i] = s2[j];
-		j++;
-	}
-	i++;
-	ptr[i] = '\0';
 
-	return (ptr);
+	while (j < n)
+	{
+		p[i + j] = s2[j];
+		j += 1;
+	}
+	p[i + j] = '\0';
+	return (p);
 }
