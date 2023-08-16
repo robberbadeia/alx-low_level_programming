@@ -5,7 +5,7 @@
 /**
  *main - Function
  *@argc: input
- *argv: input
+ *@argv: input
  *Return: int
  */
 int main(int argc, char **argv)
@@ -19,7 +19,8 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (98);
 	}
-	if ((argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '*' && argv[2][0] != '/' && argv[2][0] != '%') || strlen(argv[2]) != 1 )
+	if ((argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '*' &&
+			 argv[2][0] != '/' && argv[2][0] != '%') || strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
 		exit(99);
