@@ -20,11 +20,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	newNode->n = n;
 	newNode->next = NULL;
 
-	while ((*head)->next)
+	while (*head)
 	{
 		*head = (*head)->next;
 	}
 	*head = newNode;
 
-	return (*head);
+	return (newNode);
 }
