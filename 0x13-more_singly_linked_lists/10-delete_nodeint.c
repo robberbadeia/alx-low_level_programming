@@ -34,10 +34,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		i++;
 	}
 
-	/* account for idx out of range: don't delete and return */
-	if (i != (index - 1) || tmp->next == NULL)
-		return (-1);
-
 	/* link prior idx before delete */
 	tmp2 = tmp->next;
 	tmp->next = (tmp->next)->next;
