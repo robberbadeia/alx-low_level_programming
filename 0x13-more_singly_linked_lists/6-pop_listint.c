@@ -12,18 +12,11 @@ int pop_listint(listint_t **head)
 
 	if (!*head)
 	{
-		printf("(nil)");
+		return (0);
 	}
-	else
-	{
-		ptr = *head;
-		while (ptr)
-		{
-			tmp = ptr;
-			printf("%d\n", ptr->n);
-			ptr = ptr->next;
-			free(tmp);
-		}
-		return (1);
-	}
+	tmp = *head;
+	*head = tmp->next;
+	printf("%d\n", tmp->n);
+	free(tmp);
+	return (1);
 }
