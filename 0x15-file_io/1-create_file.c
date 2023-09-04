@@ -2,17 +2,17 @@
 
 /**
  * _strlen - find length of string
- * @s: string
+ * @str: string
  * Return: length
  */
-int _strlen(char *s)
+int _strlen(char *str)
 {
-	int l;
+	int len;
 
-	for (l = 0; s[l] != '\0'; len++)
+	for (len = 0; str[len] != '\0'; len++)
 		;
 
-	return (l);
+	return (len);
 }
 
 /**
