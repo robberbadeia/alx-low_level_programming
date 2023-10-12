@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *insert_dnodeint_at_index - Function
+ *delete_dnodeint_at_index - Function
  *@head: input
  *@index: input
  *
