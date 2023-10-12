@@ -1,10 +1,10 @@
 #include "lists.h"
 /**
  *insert_dnodeint_at_index - Function
- *@h: input
- *@idx: input
- *@n: input
- *Return: pointer
+ *@head: input
+ *@index: input
+ *
+ *Return: int
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
