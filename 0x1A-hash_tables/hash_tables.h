@@ -40,5 +40,6 @@ hash_node_t *creat_node(char *key, char *value);
 unsigned long int hash_djb2(const unsigned char *str);
 /*Task02*/
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
-
+/*Task03*/
+int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 #endif
