@@ -1,28 +1,5 @@
 #include "hash_tables.h"
 /**
- * creat_node - Function
- * @key: input
- * @value: input
- * Return: pointer to hash node
- *
-*/
-hash_node_t *creat_node(char *key, char *value)
-{
-	if (!key || !value)
-		return (NULL);
-
-	/*reserve a hash table item memory*/
-	hash_node_t *item = (hash_node_t *) malloc(sizeof(hash_node_t));
-
-	item->key = (char *) malloc(sizeof(strlen(key) + 1));
-	item->value = (char *) malloc(sizeof(strlen(value) + 1));
-
-	strcpy(item->key, key);
-	strcpy(item->value, value);
-
-	return (item);
-}
-/**
  * hash_table_create - Function
  * @size: input
  * Return: pointer to hash table
