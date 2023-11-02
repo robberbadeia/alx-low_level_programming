@@ -11,16 +11,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int i = 0;
 
 	/*Input Checks*/
-	if (!ht || !key || *key == '\0')
-	{
+	if (!ht || !key)
 		return (NULL);
-	}
 
 	/*Creat Index for this key*/
 	idx = key_index((const unsigned char *)key, ht->size);
-
-	/*Check that index*/
-
 
 	/*Search for the key start from this index*/
 	for (i = idx; ht->array[i]; i++)
