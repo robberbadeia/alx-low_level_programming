@@ -20,8 +20,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	idx = key_index((const unsigned char *)key, ht->size);
 
 	/*Check that index*/
-	if (idx >= ht->size)
-		return (NULL);
+
 
 	/*Search for the key start from this index*/
 	for (i = idx; ht->array[i]; i++)
