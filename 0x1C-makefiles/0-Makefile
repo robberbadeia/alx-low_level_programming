@@ -1,2 +1,4 @@
-all: main.c school.c
+# -0- MakeFile -*-
+
+all: main.c school.c m.h
     gcc main.c school.c -o school
